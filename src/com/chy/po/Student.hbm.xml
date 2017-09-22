@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.chy.po">
+    <class name="Student" table="student" lazy="false">
+        <!--配置主键-->
+        <id name="id">
+            <generator class="native"></generator>
+        </id>
+        <!--普通字段-->
+        <property name="name"></property>
+        <property name="gender"></property>
+        <property name="age"></property>
+    </class>
+</hibernate-mapping>
